@@ -33,6 +33,7 @@ jobs:
         echo "Issue Pull Request: ${{ toJSON(github.event.issue.pull_request) }}"
         echo "Comment Author Association: ${{ github.event.comment.author_association }}"
         echo "Comment Body: ${{ github.event.comment.body }}"
+        echo "whole comment: ${{ toJSON(github.event.comment) }}"
 
     - name: Evaluate Condition as Boolean
       run: |
